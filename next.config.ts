@@ -55,6 +55,14 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: "/sitemap-next.xml",
+        destination: "/sitemap.xml",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
